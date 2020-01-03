@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="domnasto.pl" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Projects\\Webs\\Budowlanav2\\Budowlanav2\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Projects\\Webs\\Budowlanav2\\Budowlanav2\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Website-Web.config Connection String" description="" value="data source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\kamil\Desktop\OrdersDB.mdf;&#xD;&#xA;        integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Projects\\Webs\\Budowlanav2\\Budowlanav2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Website']/@connectionString" />
+  </parameter>
+  <parameter name="OrderDbContext-Web.config Connection String" description="OrderDbContext Parametry połączenia używane w pliku web.config przez aplikację w celu uzyskiwania dostępu do bazy danych." value="Data Source=mssql6.webio.pl,2401;Database=kamilo1097_OrdersDB;Uid=kamilo1097;Password=Czorsztyn2007!;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Projects\\Webs\\Budowlanav2\\Budowlanav2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OrderDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="OrderDbContext_DatabasePublish-Web.config Connection String" description="OrderDbContext_DatabasePublish Parametry połączenia używane w pliku web.config przez aplikację w celu uzyskiwania dostępu do bazy danych." value="OrderDbContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Projects\\Webs\\Budowlanav2\\Budowlanav2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OrderDbContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

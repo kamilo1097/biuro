@@ -1,0 +1,192 @@
+﻿@model Budowlanav2.Models.Zamowienie
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Zamowienie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Imie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Imie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumerTel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumerTel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KryDachow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KryDachow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OciepPoddaszy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OciepPoddaszy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UkladPaneli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UkladPaneli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Malowanie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Malowanie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Szpachlowanie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Szpachlowanie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KartonGipsy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KartonGipsy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Glazura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Glazura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Terakota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Terakota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OciepDom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OciepDom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NapDachow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NapDachow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NapPoddaszy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NapPoddaszy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NapKartonGipsy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NapKartonGipsy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NapGlazura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NapGlazura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NapTerakota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NapTerakota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BudAltan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BudAltan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BudGrill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BudGrill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BudDrewutni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BudDrewutni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Skonczone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Skonczone)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
