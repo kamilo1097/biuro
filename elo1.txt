@@ -1,7 +1,0 @@
-zmiana1
-<<<<<<< HEAD
-zmiana2
-zmiana3
-
-=======
->>>>>>> parent of 879c4f1... dodano zmiana2
