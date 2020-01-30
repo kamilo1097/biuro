@@ -1,0 +1,153 @@
+﻿@model IEnumerable<Budowlanav2.Models.Zamowienie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Imie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumerTel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KryDachow)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OciepPoddaszy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UkladPaneli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Malowanie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Szpachlowanie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KartonGipsy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Glazura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Terakota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OciepDom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NapDachow)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NapPoddaszy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NapKartonGipsy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NapGlazura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NapTerakota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BudAltan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BudGrill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BudDrewutni)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skonczone)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumerTel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KryDachow)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OciepPoddaszy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UkladPaneli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Malowanie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Szpachlowanie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KartonGipsy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Glazura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Terakota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OciepDom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NapDachow)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NapPoddaszy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NapKartonGipsy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NapGlazura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NapTerakota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BudAltan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BudGrill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BudDrewutni)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skonczone)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

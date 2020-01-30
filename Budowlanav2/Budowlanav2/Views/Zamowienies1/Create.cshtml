@@ -1,0 +1,167 @@
+﻿@model Budowlanav2.Models.Zamowienie
+
+@using Budowlanav2.Helpers
+
+@{
+    ViewBag.Title = "Zamowienie";
+}
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+
+    <div class="site-navbar-wrap">
+        <div class="site-navbar-top">
+            <div class="container py-3">
+                <div class="row align-items-center">
+
+                    <div class="col-6">
+                        <div class="d-flex ml-auto">
+                            <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                <span class="icon-envelope mr-2"></span>
+                                <span class="d-none d-md-inline-block">kamilo1097@wp.pl</span>
+                            </a>
+                            <a href="#" class="d-flex align-items-center">
+                                <span class="icon-phone mr-2"></span>
+                                <span class="d-none d-md-inline-block">+1 291 2830 302</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-navbar">
+            <div class="container py-1">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <h1 class="mb-0 site-logo"><a href="index.html">DOMnaSTO</a></h1>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                    <li>
+                                        <a href="/zamowienies/index">START</a>
+                                    </li>
+
+
+                                    <li><a href="/zamowienies/uslugi">Usługi</a></li>
+                                    <li><a href="/zamowienies/kontakt">Kontakt</a></li>
+                                    <li><a href="/zamowienies/create">ZAMÓW</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-blocks-cover overlay inner-page" style="background-image: url(/IMG/mwnetrze.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-10">
+                    <span class="sub-text">Tutaj możesz złożyć zamówienie</span>
+                    <h1>Złóż zamówienie</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="con2">
+        <h2 id="stylN2">Złóż zamówienie<br />Zacznij z nami współpracę</h2>
+        <div id="contener">
+            <p id="stylN1">Proszę uzupełnić poniższe dane w celu złożenia zamówienia</p>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
+                <div id="inputDATA">
+                    <p id="datarow">Imię: @Html.TextBoxFor(x => x.Imie, new { @class = "form-control" })</p>
+                    <p id="datarow">Numer telefonu: @Html.TextBoxFor(x => x.NumerTel, new { @class = "form-control" })</p>
+                    <p id="datarow">E-mail: @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })</p>
+                </div>
+                <div id="head1">KATEGORIE</div>
+                <div id="con1">
+                    <div id="order">
+                        <p id="category"><img src="~/IMG/icons8-house-80.png" style="height: 50px;" /><div style="font-size:20px; text-transform: uppercase;">Dom</div></p>
+
+                        <p id="CHbox">@Html.MyCheckBox("NapKartonGipsy") @Html.LabelFor(x => x.NapKartonGipsy, "Naprawa karton-gipsów")</p>
+                        <p id="CHbox">@Html.MyCheckBox("OciepPoddaszy") @Html.LabelFor(x => x.OciepPoddaszy, "Ocieplanie poddaszy")</p>
+                        <p id="CHbox">@Html.MyCheckBox("OciepDom") @Html.LabelFor(x => x.OciepDom, "Ocieplanie domów")</p>
+                        <p id="CHbox">@Html.MyCheckBox("NapPoddaszy") @Html.LabelFor(x => x.NapPoddaszy, "Naprawa Poddaszy")</p>
+                        <p id="CHbox">@Html.MyCheckBox("NapDachow") @Html.LabelFor(x => x.NapDachow, "Naprawa dachów")</p>
+                        <p id="CHbox">@Html.MyCheckBox("NapGlazura") @Html.LabelFor(x => x.NapGlazura, "Naprawa glazury")</p>
+                        <p id="CHbox">@Html.MyCheckBox("NapTerakota") @Html.LabelFor(x => x.NapTerakota, "Naprawa terakoty")</p>
+                        <p id="CHbox">@Html.MyCheckBox("UkladPaneli") @Html.LabelFor(x => x.UkladPaneli, "Układanie paneli")</p>
+                        <p id="CHbox">@Html.MyCheckBox("KryDachow") @Html.LabelFor(x => x.KryDachow, "Krycie dachów")</p>
+                        <p id="CHbox">@Html.MyCheckBox("Szpachlowanie") @Html.LabelFor(x => x.Szpachlowanie, "Szpachlowanie")</p>
+                        <p id="CHbox">@Html.MyCheckBox("KartonGipsy") @Html.LabelFor(x => x.KartonGipsy, "Karton gipsy")</p>
+                        <p id="CHbox">@Html.MyCheckBox("Malowanie") @Html.LabelFor(x => x.Malowanie, "Malowanie")</p>
+                        <p id="CHbox">@Html.MyCheckBox("Terakota") @Html.LabelFor(x => x.Terakota, "Terakota")</p>
+                        <p id="CHbox">@Html.MyCheckBox("Glazura") @Html.LabelFor(x => x.Glazura, "Glazura")</p>
+
+
+                    </div>
+                    <div id="order">
+                        <p id="category"><img src="~/IMG/icons8-tree-planting-64.png" style="height: 50px;" /><div style="font-size: 20px; text-transform:uppercase">Ogród</div></p>
+                        <p id="CHbox">@Html.MyCheckBox("BudAltan") @Html.LabelFor(x => x.BudAltan, "Budowa altany")</p>
+                        <p id="CHbox">@Html.MyCheckBox("BudGrill") @Html.LabelFor(x => x.BudGrill, "Budowa grilla")</p>
+                        <p id="CHbox">@Html.MyCheckBox("BudDrewutni") @Html.LabelFor(x => x.BudDrewutni, "Budowa drewutni")</p>
+
+                    </div>
+                </div>
+                <div id="btnPOS">
+                    <input id="btn" type="submit" value="Zaakceptuj" />
+                </div>
+
+            }
+        </div>
+    </div>
+
+    <footer class="site-footer border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <h3 class="footer-heading mb-4">Navigation</h3>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Start</a></li>
+                                <li><a href="#">Usługi</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                                <li><a href="#">ZAMÓW</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                    <p>Font generated by <a href="https://www.flaticon.com">flaticon.com</a>. <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="001-window" href="https://www.flaticon.com/authors/smalllikeart">smalllikeart</a>, <a data-file="002-measuring" href="http://www.freepik.com">Freepik</a></p>
+                    <p>Zdjęcia przedstawione na stronie, są zdjęciami pobranymi z internetu</p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</div>

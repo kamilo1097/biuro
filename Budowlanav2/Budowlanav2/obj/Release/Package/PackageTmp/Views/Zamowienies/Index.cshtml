@@ -1,0 +1,269 @@
+﻿
+@{
+    ViewBag.Title = "Strona główna";
+}
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+
+    <div class="site-navbar-wrap">
+        <div class="site-navbar-top">
+            <div class="container py-3">
+                <div class="row align-items-center">
+
+                    <div class="col-6">
+                        <div class="d-flex ml-auto">
+                            <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                <span class="icon-envelope mr-2"></span>
+                                <span class="d-none d-md-inline-block">youremail@domain.com</span>
+                            </a>
+                            <a href="#" class="d-flex align-items-center">
+                                <span class="icon-phone mr-2"></span>
+                                <span class="d-none d-md-inline-block">+1 291 2830 302</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-navbar">
+            <div class="container py-1">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <h1 class="mb-0 site-logo"><a href="index.html">DOMnaSTO</a></h1>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                    <li>
+                                        <a href="/zamowienies/index">START</a>
+                                    </li>
+
+
+                                    <li><a href="/zamowienies/uslugi">Usługi</a></li>
+                                    <li><a href="/zamowienies/kontakt">Kontakt</a></li>
+                                    <li><a href="/zamowienies/create">ZAMÓW</a></li>
+                                </ul>
+
+                            </div>
+
+                        </nav>
+                    </div>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(/IMG/interior-home-ceiling-workspace-loft-property-1392243-pxhere.com.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row align-items-center text-center justify-content-center">
+                <div class="col-md-8">
+                    <span class="sub-text">Zbuduj swój dom</span>
+                    <h1>Zacznij z nami współpracę</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-block-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#" class="site-block-feature d-flex p-4 rounded mb-4">
+                        <div class="mr-3">
+                            <span class="icon flaticon-window font-weight-light h2"></span>
+                        </div>
+                        <div class="text">
+                            <h3>Budowa Domu</h3>
+                            <p>Prace takie jak budowa dachu</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="site-block-feature d-flex p-4 rounded mb-4">
+                        <div class="mr-3">
+                            <span class="icon flaticon-measuring font-weight-light h2"></span>
+                        </div>
+                        <div class="text">
+                            <h3>Prace w ogrodzie</h3>
+                            <p>Zbudujemy różnego rodzaju domki letnie lub też miejsce na narzędzia</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="site-block-feature d-flex p-4 rounded mb-4">
+                        <div class="mr-3">
+                            <span class="icon flaticon-interior-design font-weight-light h2"></span>
+                        </div>
+                        <div class="text">
+                            <h3>Prace wykończeniowe</h3>
+                            <p>Wykończymy Twój dom od podłogi aż po sufit</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section  border-bottom">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                    <div class="media custom-media">
+                        <div class="mr-3 icon"><span class="flaticon-interior-design display-4"></span></div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Wsparcie przy budowie</h5>
+                            Doradzimy profesjonalne rozwiązania, odpowiadające kosztom występującym w projekcie klienta
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                    <div class="media custom-media">
+                        <div class="mr-3 icon"><span class="flaticon-step-ladder display-4"></span></div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Profesjonalne podejście</h5>
+                            Każdego klienta przyjmujemy profesjonalnie, mimo iż jesteśmy firmą nową na rynku, to stosujemy niezawodne rozwiązania
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                    <div class="media custom-media">
+                        <div class="mr-3 icon"><span class="flaticon-turned-off display-4"></span></div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Formularz zgłoszeniowy</h5>
+                            Na naszej stronie stosujemy formularz zgłoszeniowy, prosty w obsłudze w celu dalszego kontaktu z klientem i omówieniem reszty specyfikacji
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="img-border">
+                        <img src="~/IMG/architecture-villa-house-roof-building-home-1256194-pxhere.com.jpg" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-5 ml-auto">
+                    <span class="sub-title">Zacznij współpracę</span>
+                    <h2 class="font-weight-bold text-black mb-5">Czemu MY?</h2>
+                    <div class="accordion" id="accordionExample">
+
+                        <h2 class="mb-0 border rounded mb-2">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1. Czemu warto zacząć z nami współpracę?
+                            </button>
+                        </h2>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Jesteśmy firmą wchodzącą na okoliczny rynek, terminy od ZARAZ. Nasza załoga to kilku osobowy zespoł z wieloletnim doświadczeniem oferujący profesjonalne podejście do klienta jak i wykonywanych usług</p>
+                            </div>
+                        </div>
+
+                        <h2 class="mb-0 border rounded mb-2">
+                            <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. Lokalizacja?
+                            </button>
+                        </h2>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Nasze usługi są podzielone na 2 regiony: Radom oraz jego okolice z naciskiem na drugą opcję </p>
+                            </div>
+                        </div>
+
+                        <h2 class="mb-0 border rounded mb-2">
+                            <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3. Formularz zgłoszeniowy
+                            </button>
+                        </h2>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Na naszej strony znajduje się formularz zgłoszeniowy, wystarczy wejść w zakładkę "ZAMÓW" na samej górze strony, uzupełnić dane kontaktowe, a następnie usługi które chcesz abyśmy je wykonali i kliknąć przycisk "Zaakceptuj", po tym zgłoszenie trafia do naszego systemu, a my kontaktujemy się na podane dane w celu ustalenia dalszych szczegółów</p>
+                            </div>
+                        </div>
+
+                        <h2 class="mb-0 border rounded mb-2">
+                            <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4. Usługi
+                            </button>
+                        </h2>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Nasze usługi również dzielimy na 2 kategorie: Dom oraz ogród. <br>
+                                    Zdecydowaliśmy się na taki podział ze względu na łatwiejszą organizację pracy oraz przydział pracowników do odpowiednich kategorii.
+                                    Więcej informacji odnośnie usług znajduje się w zakładce "Usługi"
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <h3 class="footer-heading mb-4">Navigation</h3>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Start</a></li>
+                                <li><a href="#">Usługi</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                                <li><a href="#">ZAMÓW</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                    <p>Font generated by <a href="https://www.flaticon.com">flaticon.com</a>. <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="001-window" href="https://www.flaticon.com/authors/smalllikeart">smalllikeart</a>, <a data-file="002-measuring" href="http://www.freepik.com">Freepik</a></p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</div>

@@ -1,0 +1,38 @@
+﻿@model Budowlanav2.Models.Zamowienie
+
+@{
+    ViewBag.Title = "Dziekujemy";
+}
+
+@if ((Model.BudAltan || Model.BudGrill || Model.PraceWyk || Model.OciepDom || Model.KryDachow) == false)
+{
+    @: <h3>Niestety nic nie zamówiłeś</h3>
+    @: Kliknij @Html.ActionLink("Powrót", "Zamowienie") by złożyć zamówienie na budowe :)
+}
+else
+{
+    <h2>Dziekujemy @Model.Imie</h2>
+    <div class="text-center">
+        <h3><p>Zamówiłeś</p></h3>
+        @if (Model.BudAltan == true)
+        {
+            @: Altany <br />
+        }
+        @if (Model.BudGrill == true)
+        {
+            @: Budowe grilla <br />
+        }
+        @if (Model.PraceWyk == true)
+        {
+            @: Prace wykończeniowe <br />
+        }
+        @if (Model.OciepDom == true)
+        {
+            @: Ocieplanie domu <br />
+        }
+        @if (Model.KryDachow == true)
+        {
+            @: Krycie dachu <br />
+        }
+    </div>
+}

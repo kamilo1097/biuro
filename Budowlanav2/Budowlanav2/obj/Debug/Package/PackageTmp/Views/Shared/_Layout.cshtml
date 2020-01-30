@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link href="~/Content/style1.css" rel="stylesheet" />
+    <link href="~/Content/fontawesome.css" rel="stylesheet" />
+    <link href="~/Content/pContent/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900">
+
+
+    <link rel="stylesheet" href="~/Content/pContent/style2.css">
+    <link rel="stylesheet" href="~/Content/pContent/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/pContent/jquery-ui.css">
+    <link rel="stylesheet" href="~/Content/pContent/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/pContent/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Content/pContent/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="~/Content/pContent/aos.css">
+    <link rel="stylesheet" href="~/Content/pContent/style.css">
+
+
+
+</head>
+<body>
+    
+
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-success">@TempData["message"]</div>
+    }
+    @RenderBody()
+    <script src="~/Content/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/Scripts/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/Content/Scripts/jquery-ui.js"></script>
+    <script src="~/Content/Scripts/popper.min.js"></script>
+    <script src="~/Content/Scripts/bootstrap.min.js"></script>
+    <script src="~/Content/Scripts/owl.carousel.min.js"></script>
+    <script src="~/Content/Scripts/jquery.stellar.min.js"></script>
+    <script src="~/Content/Scripts/jquery.countdown.min.js"></script>
+    <script src="~/Content/Scripts/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/Scripts/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/Scripts/aos.js"></script>
+
+    <script src="~/Content/Scripts/main.js"></script>
+</body>
+
+</html>
